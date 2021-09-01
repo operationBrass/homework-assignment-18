@@ -1,32 +1,62 @@
-# 📐 Add Comments to Implementation of a Reducer
+# Employee Tracker CLI
 
-Work with a partner to add comments describing the functionality of the code found in [reducers.js](.Unsolved/client/src/utils/reducers.js).
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
-## 📝 Notes
+![Redux Store](./Assets/final/finalScreen.PNG)
 
-What is the purpose of the action argument that gets passed to the reducer function?
+### Description
 
-How can we account for multiple types of actions inside the reducer?
+This shop application has been converted to using redux for global state managemgent.
 
-Refer to the documentation: 
+### Table of Contents
 
-[React documentation on useReducer](https://reactjs.org/docs/Hooks-reference.html#usereducer)
+- [Usage Guide](#Usage-Guide)
+- [Install Instructions](#Installation)
+- [Technologies Used](#Technologies-Used)
+- [Contributions](#Contributions)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
----
+## Usage Guide
 
-## 💡 Hints
+demonstrating database management functions in web application
 
-How do we make sure that the database is seeded?
+Watch [this](https://drive.google.com/file/d/1xYpVD1gesTMzuDcjNIH77cKjG8_SYv2z/view) video to learn more
 
-Which `npm` package allows us to run both the front end and the back end at the same time? How do you start it?
+## Installation
 
-## 🏆 Bonus
+You will need to create an .env file and populate..
 
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+`DB_USER= ''`
 
-* Why do we create variable names for each action type in `actions.js`?
+`DB_PASSWORD= ''`
 
-Use [Google](https://www.google.com) or another search engine to research this.
+`DB_NAME='employee_tracker_db'`
 
----
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+Create the Database using schema.sql
+
+`CREATE DATABASE employee_tracker_db;`
+
+Install packages
+
+`NPM install`
+
+Run the application
+
+`Node index.js`
+
+## Technologies Used
+
+Sequelize, Node, MySQL, Inquirer
+
+## Contributions
+
+This is currently my own work. Please feel free to submit your contributions on GITHUB with credits given
+
+## Tests
+
+Future testing planned using Jest testing framework
+
+## Questions
+
+If you have any questions or want to keep up with my latest projects, please follow me on [Github](http://www.github.com/operationBrass) or contact me via [Email](mr.brn.lewis@outlook.com).

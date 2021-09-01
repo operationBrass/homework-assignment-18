@@ -7,7 +7,9 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { reduxStore } from './reduxStore';
+import { createStore } from 'redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
+import { reducer } from './utils/reducers'
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
@@ -21,6 +23,12 @@ import OrderHistory from './pages/OrderHistory';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
+
+
+
+const store = createStore(reducer, /* preloadedState, */ devToolsEnhancer(
+  // Specify name here, actionsBlacklist, actionsCreators and other options if needed
+));
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
@@ -42,7 +50,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <StoreProvider store={reduxStore}>
+          <StoreProvider store={store}>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
