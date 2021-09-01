@@ -1,12 +1,12 @@
-# Employee Tracker CLI
+#E-Commerece using Redux
 
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
 
-![Redux Store](./Assets/final/finalScreen.PNG)
+![Redux Store](./client/public/images/finalScreen.PNG)
 
 ### Description
 
-This shop application has been converted to using redux for global state managemgent.
+This shop application has been converted to using redux to manage global state.
 
 ### Table of Contents
 
@@ -19,39 +19,35 @@ This shop application has been converted to using redux for global state managem
 
 ## Usage Guide
 
-demonstrating database management functions in web application
+This application is deployed live.
 
-Watch [this](https://drive.google.com/file/d/1xYpVD1gesTMzuDcjNIH77cKjG8_SYv2z/view) video to learn more
+Visit [E-Commerce Redux](https://salty-atoll-67944.herokuapp.com/) on Heroku.
 
 ## Installation
 
-You will need to create an .env file and populate..
+If you would like to install the application on your local machine..
 
-`DB_USER= ''`
+Download the package to your local machine
 
-`DB_PASSWORD= ''`
-
-`DB_NAME='employee_tracker_db'`
-
-Create the Database using schema.sql
-
-`CREATE DATABASE employee_tracker_db;`
-
-Install packages
+Install required packages
 
 `NPM install`
 
 Run the application
 
-`Node index.js`
+`NPM Start`
+
+Add data to database
+
+`NPM Run Seed`
 
 ## Technologies Used
 
-Sequelize, Node, MySQL, Inquirer
+React, Redux, Node
 
 ## Contributions
 
-This is currently my own work. Please feel free to submit your contributions on GITHUB with credits given
+This site is designed by Coding Bootcamp team, has beeen modified to use redux store from context.
 
 ## Tests
 
